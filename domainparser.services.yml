@@ -1,0 +1,5 @@
+services:
+  domainparser.provider:
+    class: Drupal\domainparser\DomainParserProvider
+    arguments:
+      - '@dcache.bin.default_memory_persistent'

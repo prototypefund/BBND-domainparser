@@ -1,0 +1,28 @@
+{
+    "name": "drupal/domainparser",
+    "type": "drupal-module",
+    "license": "gpl-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Drupal\\domainparser\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Merlin",
+            "email": "merlin@geeks4change.net"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "jeremykendall/php-domain-parser": "^6.2",
+        "php": "^7.4 || ^8.0",
+        "drupal/granulartimecache": "^1@dev",
+        "drupal/dcache": "^1@dev"
+    }
+}

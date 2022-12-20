@@ -1,0 +1,4 @@
+name: Domain Parser API
+description: Allows parsing domains.
+type: module
+core_version_requirement: ^9 || ^10
