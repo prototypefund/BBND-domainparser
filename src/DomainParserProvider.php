@@ -7,6 +7,7 @@ namespace Drupal\domainparser;
 use Drupal\dcache\CacheItemGeneratorInterface;
 use Drupal\dcache\DCacheInterface;
 use Pdp\Rules;
+use Pdp\TopLevelDomains;
 
 /**
  * Provide domain parsers.
@@ -39,8 +40,8 @@ class DomainParserProvider implements DomainParserProviderInterface {
     return 'https://publicsuffix.org/list/public_suffix_list.dat';
   }
 
-  public function provideTopLevelDomainListParser(): Rules {
-    return Rules::fromString($this->provideTopLevelDomainList());
+  public function provideTopLevelDomainListParser(): TopLevelDomains {
+    return TopLevelDomains::fromString($this->provideTopLevelDomainList());
   }
 
   public function provideTopLevelDomainList(): string {
