@@ -22,7 +22,7 @@ class DomainParserProvider implements DomainParserProviderInterface {
 
   protected HttpFetcher $httpFetcher;
 
-  public function __construct(DCacheInterface $dCache, HttpFetcher $httpFetcher = NULL) {
+  public function __construct(DCacheInterface $dCache, HttpFetcher $httpFetcher) {
     $this->dCache = $dCache;
     $this->httpFetcher = $httpFetcher;
   }
