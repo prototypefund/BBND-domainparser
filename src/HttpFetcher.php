@@ -21,6 +21,9 @@ class HttpFetcher {
 
   protected int $maxRetries = 3;
 
+  public function __construct() {}
+
+
   public function fetchFromRemote(string $remoteUrl, GuzzleException $exception = NULL): ?string {
     try {
       $client = $this->getHttpClient();

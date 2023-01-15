@@ -3,3 +3,7 @@ services:
     class: Drupal\domainparser\DomainParserProvider
     arguments:
       - '@dcache.bin.default_memory_persistent'
+      - '@domainparser.http_fetcher'
+  domainparser.http_fetcher:
+    class: Drupal\domainparser\HttpFetcher
+    arguments: []
