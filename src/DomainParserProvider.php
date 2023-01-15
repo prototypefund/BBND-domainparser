@@ -15,7 +15,7 @@ use Pdp\Rules;
  *
  * @link https://github.com/jeremykendall/php-domain-parser
  */
-class DomainParserProvider implements DomainInfoProviderInterface {
+class DomainParserProvider implements DomainParserProviderInterface {
 
   protected DCacheInterface $dCache;
 

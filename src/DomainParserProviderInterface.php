@@ -4,7 +4,7 @@ namespace Drupal\domainparser;
 
 use Pdp\Rules;
 
-interface DomainInfoProviderInterface {
+interface DomainParserProviderInterface {
 
   public function providePublicSuffixListParser(): Rules;
 
