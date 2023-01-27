@@ -53,8 +53,8 @@ class DomainParserProvider implements DomainParserProviderInterface {
     return 'https://data.iana.org/TLD/tlds-alpha-by-domain.txt';
   }
 
-  public function getItemGenerator(): CacheItemGeneratorInterface {
-    return new class implements CacheItemGeneratorInterface {
+  public function getItemGenerator(string $url, string $cacheId): CacheItemGeneratorInterface {
+    return new class($this->httpFetcher, $url, $cacheId) implements CacheItemGeneratorInterface {
 
       protected HttpFetcher $httpFetcher;
 
