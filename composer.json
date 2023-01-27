@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "jeremykendall/php-domain-parser": "^6.2",
+        "jeremykendall/php-domain-parser": "^6.0",
         "php": "^7.4 || ^8.0",
         "drupal/granulartimecache": "^1@dev",
         "drupal/dcache": "^1@dev"
